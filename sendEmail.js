@@ -10,6 +10,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
             alert('تم إرسال النموذج بنجاح!');
             form.reset();
         }, function(error) {
+            console.error('خطأ أثناء إرسال النموذج:', error);
             alert('حدث خطأ أثناء إرسال النموذج، الرجاء المحاولة مرة أخرى.');
         });
 });
