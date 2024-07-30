@@ -1,8 +1,8 @@
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const serviceID = 'YOUR_SERVICE_ID';
-    const templateID = 'YOUR_TEMPLATE_ID';
+    const serviceID = 'service_6oului3';
+    const templateID = 'template_577zftz';
 
     const formData = {
         student_id: document.getElementById('student-id').value,
