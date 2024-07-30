@@ -20,7 +20,10 @@
                 <h1>مركز التدريب المهني الريان</h1>
             </div>
             <h2>نموذج التسجيل</h2>
-            <form id="registrationForm" data-netlify="true">
+            <form id="registrationForm" data-netlify="true" netlify-honeypot="bot-field">
+                <div style="display:none">
+                    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                </div>
                 <div class="form-group">
                     <label for="student-id">رقم الطالب:</label>
                     <input type="text" id="student-id" name="student_id" required>
