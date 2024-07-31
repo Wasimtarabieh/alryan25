@@ -4,7 +4,16 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const form = event.target;
     const formData = new FormData(form);
     const formObject = Object.fromEntries(formData.entries());
-    
+
+    // Convert formData to object and handle file inputs
+    formData.forEach((value, key) => {
+        if (value instanceof File) {
+            formObject[key] = value.name; // Store file names
+        } else {
+            formObject[key] = value;
+        }
+    });
+
     const sendEmail = (attempt = 1) => {
         emailjs.send('service_6oului3', 'template_577zftz', formObject)
             .then(function(response) {
