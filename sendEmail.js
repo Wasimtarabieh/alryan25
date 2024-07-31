@@ -17,7 +17,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
                     // المحاولة مرة أخرى بعد فترة قصيرة
                     setTimeout(() => sendEmail(attempt + 1), 1000);
                 } else {
-                    alert('حدث خطأ أثناء إرسال النموذج، الرجاء المحاولة مرة أخرى. إذا استمرت المشكلة، يرجى الاتصال بالدعم الفني.');
+                    alert(`حدث خطأ أثناء إرسال النموذج، الرجاء المحاولة مرة أخرى. إذا استمرت المشكلة، يرجى الاتصال بالدعم الفني. التفاصيل: ${error.text || error}`);
                 }
             });
     };
