@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مركز التدريب المهني الريان</title>
+    <title>مركز التدريب المهني الريان | מרכז ההכשרה המקצועית אלריאן</title>
     <link rel="stylesheet" href="style.css">
-    <!-- استخدام النسخة الحديثة من مكتبة EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         (function() {
@@ -17,91 +16,99 @@
     <div class="container">
         <div class="registration-form">
             <div class="header">
-                <img src="https://assets.codepen.io/12011409/logo-01.png" alt="شعار المركز" class="logo">
-                <h1>مركز التدريب المهني الريان</h1>
+                <img src="https://assets.codepen.io/12011409/logo-01.png" alt="شعار المركز | לוגו המרכז" class="logo">
+                <h1>مركز التدريب المهني الريان | מרכז ההכשרה המקצועית אלריאן</h1>
             </div>
-            <h2>نموذج التسجيل</h2>
+            <h2>نموذج التسجيل | טופס הרשמה</h2>
             <form id="registrationForm" data-netlify="true" netlify-honeypot="bot-field">
                 <div style="display:none">
                     <label>Don’t fill this out if you're human: <input name="bot-field"></label>
                 </div>
                 <div class="form-group">
-                    <label for="student-id">رقم الطالب:</label>
+                    <label for="student-id">رقم الطالب | מספר התלמיד:</label>
                     <input type="text" id="student-id" name="student_id" required>
                 </div>
                 <div class="form-group">
-                    <label for="branch">الفرع:</label>
+                    <label for="branch">الفرع | סניף:</label>
                     <input type="text" id="branch" name="branch" required>
                 </div>
                 <div class="form-group">
-                    <label for="first-name">الاسم الأول:</label>
+                    <label for="first-name">الاسم الأول | שם פרטי:</label>
                     <input type="text" id="first-name" name="first_name" required>
                 </div>
                 <div class="form-group">
-                    <label for="last-name">الاسم الأخير:</label>
+                    <label for="last-name">الاسم الأخير | שם משפחה:</label>
                     <input type="text" id="last-name" name="last_name" required>
                 </div>
                 <div class="form-group">
-                    <label for="id-number">رقم الهوية:</label>
+                    <label for="id-number">رقم الهوية | מספר זהות:</label>
                     <input type="text" id="id-number" name="id_number" required>
                 </div>
                 <div class="form-group">
-                    <label for="dob">تاريخ الميلاد:</label>
+                    <label for="dob">تاريخ الميلاد | תאריך לידה:</label>
                     <input type="date" id="dob" name="dob" required>
                 </div>
                 <div class="form-group">
-                    <label for="workplace">مكان العمل:</label>
+                    <label for="workplace">مكان العمل | מקום עבודה:</label>
                     <input type="text" id="workplace" name="workplace" required>
                 </div>
                 <div class="form-group">
-                    <label for="address">العنوان:</label>
+                    <label for="address">العنوان | כתובת:</label>
                     <input type="text" id="address" name="address" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">البريد الإلكتروني:</label>
+                    <label for="email">البريد الإلكتروني | דוא"ל:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="mobile-phone">رقم الهاتف المحمول:</label>
+                    <label for="mobile-phone">رقم الهاتف المحمول | טלפון נייד:</label>
                     <input type="tel" id="mobile-phone" name="mobile_phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="landline-phone">رقم الهاتف الأرضي:</label>
+                    <label for="landline-phone">رقم الهاتف الأرضي | טלפון קווי:</label>
                     <input type="tel" id="landline-phone" name="landline_phone">
                 </div>
                 <div class="form-group">
-                    <label for="education">المستوى التعليمي:</label>
+                    <label for="education">المستوى التعليمي | רמת השכלה:</label>
                     <input type="text" id="education" name="education" required>
                 </div>
                 <div class="form-group">
-                    <label for="referrer">مصدر الإحالة:</label>
+                    <label for="referrer">مصدر الإحالة | מקור הפניה:</label>
                     <input type="text" id="referrer" name="referrer">
                 </div>
                 <div class="form-group">
-                    <label for="course-start-date">تاريخ البدء المتوقع:</label>
-                    <input type="date" id="course-start-date" name="course_start_date" required>
+                    <label for="course-name">اسم الدورة (قائمة منسدلة) | שם הקורס (רשימה נפתחת):</label>
+                    <select id="course-name" name="course_name" required>
+                        <option value="קורס מיגון ואבטחה">קורס מיגון ואבטחה - 8000שח</option>
+                        <option value="קורס תיקון טלפונים">קורס תיקון טלפונים - 6300שח</option>
+                        <option value="קורס עיצוב פירות">קורס עיצוב פירות - 2000שח</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="course-name">اسم الدورة:</label>
-                    <input type="text" id="course-name" name="course_name" required>
-                </div>
-                <div class="form-group">
-                    <label for="tuition">رسوم التعليم:</label>
-                    <input type="text" id="tuition" name="tuition" required>
-                </div>
-                <div class="form-group">
-                    <label for="registration-fee">رسوم التسجيل:</label>
-                    <input type="text" id="registration-fee" name="registration_fee" required>
-                </div>
-                <div class="form-group">
-                    <label for="total-fee">الإجمالي مع الضريبة:</label>
-                    <input type="text" id="total-fee" name="total_fee" required>
-                </div>
-                <div class="form-group">
-                    <label for="payment-method">طريقة الدفع / التعليقات:</label>
+                    <label for="payment-method">طريقة الدفع / التعليقات | אופן התשלום / הערות:</label>
                     <textarea id="payment-method" name="payment_method" rows="4" required></textarea>
                 </div>
-                <button type="submit">إرسال</button>
+                <div class="form-group">
+                    <label for="attachment">إرفاق صور ثبوتية | צרף מסמכים מזהים:</label>
+                    <input type="file" id="attachment" name="attachment[]" multiple>
+                </div>
+                <div class="form-group">
+                    <label for="agreement">الموافقة على الشروط | הסכמה לתנאים:</label>
+                    <textarea id="agreement" name="agreement" rows="4" readonly>
+                    يجب على الطالب الموافقة على دفع رسوم اشتراك لحجز مقعد في الدورة:
+                    קורס מיגון ואבטחה 700שח، קורס תיקון טלפונים 500שח، קורס עיצוב פירות 500שח.
+                    عند توقيع هذا النموذج، يقر الطالب بأنه يريد الانضمام للدورة ولديه إمكانية إلغاء التسجيل حتى 14 يومًا. بعد هذه الفترة، لا يتم إعادة رسوم التسجيل ويكون الطالب ملزم بالمقعد الذي تسجل إليه.
+                    על התלמיד להסכים לשלם דמי מנוי לשמירת מקום בקורס:
+                    קורס מיגון ואבטחה 700שח، קורס תיקון טלפונים 500שח، קורס עיצוב פירות 500שח.
+                    בחתימת טופס זה, מצהיר התלמיד כי ברצונו להצטרף לקורס ויש לו אפשרות לבטל את הרישום תוך 14 יום. לאחר תקופה זו, לא יוחזרו דמי הרישום והסטודנט יהיה מחויב למקום שאליו נרשם.
+                    </textarea>
+                    <input type="checkbox" id="agree" name="agree" required> أوافق على الشروط | אני מסכים לתנאים
+                </div>
+                <div class="form-group">
+                    <label for="signature">التوقيع | חתימה:</label>
+                    <input type="text" id="signature" name="signature" required>
+                </div>
+                <button type="submit">إرسال | שלח</button>
             </form>
         </div>
     </div>
