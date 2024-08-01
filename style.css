@@ -24,8 +24,8 @@ body {
     padding: 4vw;
     border-radius: 1.5vw;
     box-shadow: 0 0 3vw rgba(0, 0, 0, 0.2);
-    width: 80vw;
-    max-width: 100%;
+    width: 90vw;
+    max-width: 600px;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .registration-form .header .logo {
-    width: 15vw;
+    width: 20vw;
     height: auto;
     margin-bottom: 1vw;
 }
