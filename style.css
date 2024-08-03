@@ -62,7 +62,7 @@ body {
 .registration-form label {
     display: block;
     margin-bottom: 0.5vw;
-    font-weight: bold;
+    font-weight: 600;
     color: #333;
 }
 
