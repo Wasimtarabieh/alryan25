@@ -12,6 +12,19 @@
             emailjs.init("k3sFmPycB9ilBaUgQ");
         })();
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // If the user is on an Android device and using a browser other than Chrome,
+            // suggest using Chrome for the best experience.
+            var ua = navigator.userAgent.toLowerCase();
+            var isAndroid = ua.indexOf("android") > -1;
+            var isChrome = ua.indexOf("chrome") > -1;
+
+            if (isAndroid && !isChrome) {
+                alert('للحصول على أفضل تجربة، يُفضل استخدام متصفح Chrome.');
+            }
+        });
+    </script>
 </head>
 <body>
     <div class="container">
